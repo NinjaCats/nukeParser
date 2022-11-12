@@ -12,4 +12,6 @@ nodes = Nodes.regsiterNode('your nukeScript file')
 
 nuke scirpte node are stored in Nodes class.
 
-the paramter and value stored in Node class.
+knob and value stored in Node class.
+
+> all knob regsitered to _konb like `node._parm` 
