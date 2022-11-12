@@ -9,7 +9,8 @@ class TestNukeSciptParser(unittest.TestCase):
         for i in nodes:
             _name = i.name
             _className = i.nodeClass
-            print(f'nodeName: {_name}\nnodeType: {_className}')
+            _file = i.getAttr('_file')
+            print(f'nodeName: {_name}\nnodeType: {_className}\nnodeValue: {_file}')
 
 
 

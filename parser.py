@@ -33,7 +33,7 @@ class Node(object):
         setattr(self, f'_{attr}', value)
 
     def getAttr(self, attr: str) -> Any:
-        if hasattr(self, '_name'):
+        if hasattr(self, attr):
             return getattr(self, attr)
         else:
             return None
