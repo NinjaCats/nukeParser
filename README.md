@@ -1,5 +1,5 @@
 ## Parse an Nuke file to get all node data.
-![license](https://img.shields.io/badge/license-Apache2.0-green)![language])(https://img.shields.io/badge/language-Python-blue)
+![license](https://img.shields.io/badge/license-Apache2.0-green)![language](https://img.shields.io/badge/language-Python-blue)
 
 ### Usage:
 
