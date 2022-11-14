@@ -4,7 +4,7 @@
 ### Usage:
 
 ```
-nodes = Nodes.regsiterNode('your nukeScript file')
+nodes = Nodes.registerNode('your nukeScript file')
 ```
 
 

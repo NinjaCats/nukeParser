@@ -4,7 +4,7 @@ import parser
 class TestNukeSciptParser(unittest.TestCase):
     def test_parse_nuke_sciprt(self):
         f = "test.nk"
-        nodes = parser.Nodes.regsiterNode(f)
+        nodes = parser.Nodes.registerNode(f)
 
         for i in nodes:
             _name = i.name

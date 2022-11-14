@@ -9,7 +9,7 @@ def readScript(f: str) -> str:
         return nukeScript.read()
 
 
-def parser(parser: Pattern, code: str) -> list[dict]:
+def parser(parser: Pattern, code: str) -> List[dict]:
     m = parser.finditer(code)
     return [i.groupdict() for i in m]
 
@@ -46,8 +46,14 @@ class Node(object):
 
 
 class Nodes(object):
+    def __len__(self):
+        return len(self.__m)
+
+    def __getitem__(self, key):
+        return self.__m[key]
+
     def __iter__(self):
-        self.__max = len(self.__m)
+        self.__max = len(self)
         self.__i = 0
         return self
 
@@ -63,7 +69,7 @@ class Nodes(object):
         self.__m: List[Node] = []
 
     @classmethod
-    def regsiterNode(cls, scriptFile: str):
+    def registerNode(cls, scriptFile: str):
         _codes = readScript(scriptFile)
 
         thisNode = cls()
